@@ -1,0 +1,19 @@
+#!/bin/bash
+# openSUSE's .bashrc sources this file automatically.
+
+# XDG compliant bash. inspired by https://savannah.gnu.org/support/?108134
+
+
+# separated from core loop below to transiently change collation
+mapfile -t _files < <(
+    export LC_COLLATE=C
+    printf '%s\n' "$XDG_CONFIG_HOME/bash"/*.bash
+    # no nullglob, no folder check (fail loudly)
+)
+
+# splitting into multiple files inspired by https://github.com/chr4/shellrc
+for _file in "${_files[@]}"; do
+    [ -r "$_file" ] && source "$_file"
+done
+
+unset _files _file

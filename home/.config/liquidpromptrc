@@ -1,0 +1,37 @@
+#!/bin/sh
+# above is just to let editors highlight syntax
+
+# full doc at: https://liquidprompt.readthedocs.io/en/stable/config.html
+# https://www.nerdfonts.com/cheat-sheet for private chars (use $'\ucode')
+
+# ---
+
+# saving cpu cycles
+LP_ENABLE_DETACHED_SESSIONS=0
+LP_ENABLE_DISPLAY=0
+LP_ENABLE_DISK=0
+LP_ENABLE_FOSSIL=0
+LP_ENABLE_HG=0
+LP_ENABLE_SVN=0
+LP_ENABLE_BZR=0
+LP_ENABLE_MODULES=0
+LP_ENABLE_PERL_VENV=0
+LP_ENABLE_RUBY_VENV=0
+LP_ENABLE_SCLS=0
+
+
+# enhancing output
+LP_ENABLE_ERROR_MEANING=1
+LP_ENABLE_ERROR_MEANING_EXTENDED=1
+LP_ENABLE_RUNTIME_BELL=1
+LP_ENABLE_TIME=1
+LP_TIME_ANALOG=1
+LP_USER_ALWAYS=-1 # root is identified by lack of liquidprompt
+
+# frequently used switches (move to above groups if satisfied)
+LP_HOSTNAME_ALWAYS=0
+LP_TEMP_THRESHOLD=40
+LP_MARK_TEMP=$'\uf2c9'
+LP_TEMP_SYSFS_IGNORE_FILES=( /sys/class/hwmon/hwmon8/temp1_input ) # it shows too high
+LP_ENABLE_WIFI_STRENGTH=1
+
