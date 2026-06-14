@@ -2,6 +2,8 @@
 
 eval $(thefuck --alias)
 
+export MCFLY_FUZZY=2
+export MCFLY_PROMPT="❯"
 eval "$(mcfly init bash)"
 
 

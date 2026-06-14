@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Breeze
-Font=Hack Nerd Font,26,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+Font=Hack Nerd Font,22,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 UseFontLineChararacters=true
 WordMode=true
 WordModeBrahmic=true

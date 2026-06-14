@@ -1,3 +1,6 @@
 [tools]
+aws-cli = { version = "latest", symlink_bins = "true" }
+"cargo:just-lsp" = "latest"
 node = "20"
+rust = "latest"
 usage = "latest"

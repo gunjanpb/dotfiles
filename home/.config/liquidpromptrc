@@ -27,6 +27,7 @@ LP_ENABLE_RUNTIME_BELL=1
 LP_ENABLE_TIME=1
 LP_TIME_ANALOG=1
 LP_USER_ALWAYS=-1 # root is identified by lack of liquidprompt
+LP_MARK_UNTRACKED=$'\uf127 '
 
 # frequently used switches (move to above groups if satisfied)
 LP_HOSTNAME_ALWAYS=0
